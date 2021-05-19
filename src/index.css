@@ -16,8 +16,9 @@ code {
   border: 1px solid mediumturquoise;
   padding: 5px 20px 5px 20px;
   border-radius: 2px;
+  color:white;
 }
 .btn:hover{
-  background-color: aquamarine;
-  color: blue;
+  color: black;
+  opacity: 0.8;
 }
