@@ -30,7 +30,8 @@ function App() {
   return (
     <div className="App">
       <Header title="Piyush" />
-      <Tasks tasks={tasks} onDelete={deleteTask}/>
+      {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete={deleteTask}/>):(<h2>No tasks to show</h2>)}
+      
     </div>
   );
 }
