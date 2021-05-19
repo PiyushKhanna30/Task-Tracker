@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 
 const Header = (props) => {
     return (
@@ -10,4 +11,8 @@ Header.defaultProps = {
     lname:'Khanna'
 }
 
+Header.propTypes = {
+    title:PropTypes.string,
+    lname:PropTypes.string.isRequired
+}
 export default Header
