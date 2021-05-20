@@ -70,7 +70,7 @@ function App() {
     <div className="App">
       <Header title="Task" onAdd={() => setShowAddTask(!showAddTask)} showAddTask={showAddTask} />
       {showAddTask && <AddTask onAdd={addTask} />}
-      {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />) : (<h2>No tasks to show</h2>)}
+      {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />) : (<h2><marquee direction="right">No tasks to show</marquee></h2>)}
 
     </div>
   );
